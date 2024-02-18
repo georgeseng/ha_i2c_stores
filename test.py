@@ -115,11 +115,11 @@ pcf = PCF8575(i2c_port_num, pcf_address)
 print('it worked: ')
 print(pcf.port)
 
-pcf.port[8] = False
-print('port[8] = false')
-print(pcf.port)
+#pcf.port[8] = False
+#print('port[8] = false')
+#print(pcf.port)
 
-time.sleep(1)
+#time.sleep(1)
 
 pcf.port[14] = False
 print('port[14] = false')
