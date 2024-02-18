@@ -1,6 +1,6 @@
 import smbus
 from pcf8575 import PCF8575
-bus = smbus.SMBus(1)
+#bus = smbus.SMBus(1)
 
 i2c_port_num = 1
 pcf_address = 0x20
