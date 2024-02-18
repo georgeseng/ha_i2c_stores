@@ -121,11 +121,18 @@ print(pcf.port)
 
 time.sleep(1)
 
-pcf.port[15] = False
-print('port[15] = false')
+pcf.port[14] = False
+print('port[14] = false')
 print(pcf.port)
 
 time.sleep(1)
+
+pcf.port[7] = False
+print('port[7] = false')
+print(pcf.port)
+
+time.sleep(1)
+
 
 pcf.port = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
 print('port[x] = true')
