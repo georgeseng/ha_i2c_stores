@@ -1,3 +1,3 @@
-import smbus2
-bus = smbus2.SMBus(1)
+import smbus
+bus = smbus.SMBus(1)
 print('it worked!')
