@@ -1,10 +1,32 @@
 import smbus
 import time
+from homeassistant.components.switch import SwitchEntity
 #import sys
 #sys.path.insert(0, '')
 
 #from pcf8575 import PCF8575
 #bus = smbus.SMBus(1)
+
+class MySwitch(SwitchEntity):
+    _attr_has_entity_name = True
+
+    def __init__(self):
+        self._is_on = False
+        self._attr_device_info = ...  # For automatic device registration
+        self._attr_unique_id = ...
+
+    @property
+    def is_on(self):
+        """If the switch is currently on or off."""
+        return self._is_on
+
+    def turn_on(self, **kwargs):
+        """Turn the switch on."""
+        self._is_on = True
+
+    def turn_off(self, **kwargs):
+        """Turn the switch off."""
+        self._is_on = False
 
 class IOPort(list):
     """
@@ -33,7 +55,7 @@ class IOPort(list):
         state = self.pcf8575.bus.read_word_data(self.pcf8575.address, 0)
         ret = []
         for i in range(16):
-            ret.append(bool(state & 1<<15-i))
+            ret.append(bool(state & 1<<(15-i)))
         return repr(ret)
 
     def __len__(self):
