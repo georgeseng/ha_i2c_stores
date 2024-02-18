@@ -1,6 +1,6 @@
 name: "I2C Test"
 description: "Opens the I2C device"
-version: "1.0.14"
+version: "1.0.15"
 slug: "i2c_test"
 init: false
 arch:
