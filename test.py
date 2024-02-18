@@ -140,7 +140,7 @@ time.sleep(1)
 #time.sleep(1)
 
 
-pcf.port = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+pcf.port = [True, True, False, True, True, True, True, True, True, True, True, True, True, True, True, True]
 print('port[x] = true')
 print(pcf.port)
 
