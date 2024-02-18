@@ -123,3 +123,8 @@ print('port[15] = false')
 print(pcf.port)
 
 
+pcf.port = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
+print('port[x] = true')
+print(pcf.port)
+
+
