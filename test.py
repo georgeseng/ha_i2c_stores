@@ -115,8 +115,8 @@ pcf = PCF8575(i2c_port_num, pcf_address)
 print('it worked: ')
 print(pcf.port)
 
-pcf.port[3] = False
-print('port[3] = false')
+pcf.port[7] = False
+print('port[7] = false')
 print(pcf.port)
 
 time.sleep(1)
@@ -127,11 +127,11 @@ print(pcf.port)
 
 time.sleep(1)
 
-pcf.port[7] = False
-print('port[7] = false')
-print(pcf.port)
+#pcf.port[7] = False
+#print('port[7] = false')
+#print(pcf.port)
 
-time.sleep(1)
+#time.sleep(1)
 
 
 pcf.port = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
