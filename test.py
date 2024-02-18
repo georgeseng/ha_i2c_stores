@@ -1,4 +1,7 @@
 import smbus
+import sys
+sys.path.insert(0, '')
+
 from pcf8575 import PCF8575
 #bus = smbus.SMBus(1)
 
