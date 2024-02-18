@@ -1,4 +1,5 @@
 import smbus
+import time
 #import sys
 #sys.path.insert(0, '')
 
@@ -118,10 +119,13 @@ pcf.port[2] = False
 print('port[2] = false')
 print(pcf.port)
 
+time.sleep(1)
+
 pcf.port[15] = False
 print('port[15] = false')
 print(pcf.port)
 
+time.sleep(1)
 
 pcf.port = [True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]
 print('port[x] = true')
