@@ -112,8 +112,9 @@ pcf = PCF8575(i2c_port_num, pcf_address)
 #bus.write_byte(
 
 print('it worked: ')
-println(pcf.port)
+print(pcf.port)
 pcf.port[2] = False
-println(pcf.port)
+print('updated: ')
+print(pcf.port)
 
 
