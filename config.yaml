@@ -1,0 +1,18 @@
+name: "I2C Test"
+description: "Opens the I2C device"
+version: "1.0.0"
+slug: "i2c_test"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+log_level: info
+startup: services
+privileged:
+  - SYS_ADMIN
+devices:
+  - /dev/i2c-1
+device_tree: true
