@@ -1,5 +1,5 @@
-name: "I2C Test"
-description: "Opens the I2C device"
+name: "I2C Test pcf8575"
+description: "i2c pcf8575"
 version: "1.0.22"
 slug: "i2c_test"
 init: false
